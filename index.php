@@ -142,14 +142,14 @@
 <section id="decisoes-anc" class="decisoes">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-3">
+			<div class="col-sm-3">
 				<div class="bloco-decisoes">
 					<h2>Decisões</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vulputate nisl vel euismod pellentesque. Donec vehiculasve</p>
 					<a class="btn-geral" href="">VER TODAS</a>
 				</div>
 			</div>
-			<div class="col-md-9">
+			<div class="col-sm-9">
 				<div class="owl-carousel owl-theme owl-decisoes">
 					<div class="item">
 						<p>Empresa</p>
@@ -180,14 +180,14 @@
 <div class="container">
 	<div class="row">
 		<h2>Redes Sociais</h2>
-		<div class="col-md-4">
-			<a class="twitter-timeline" data-width="390" data-height="512" href="https://twitter.com/mendescunha?ref_src=twsrc%5Etfw">Tweets by mendescunha</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+		<div class="col-sm-4">
+			<a class="twitter-timeline" data-height="512" href="https://twitter.com/mendescunha?ref_src=twsrc%5Etfw">Tweets by mendescunha</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 		</div>
-		<div class="col-md-4">
-			<a class="twitter-timeline" data-width="390" data-height="512" href="https://twitter.com/mendescunha?ref_src=twsrc%5Etfw">Tweets by mendescunha</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+		<div class="col-sm-4">
+			<a class="twitter-timeline"  data-height="512" href="https://twitter.com/mendescunha?ref_src=twsrc%5Etfw">Tweets by mendescunha</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 		</div>
-		<div class="col-md-4">
-			<div class="fb-page" data-href="https://www.facebook.com/MendesCunha" data-tabs="timeline" data-width="390" data-height="370" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/MendesCunha" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/MendesCunha">Mendes Cunha Advogados</a></blockquote></div>
+		<div class="col-sm-4">
+			<div class="fb-page" data-href="https://www.facebook.com/MendesCunha" data-tabs="timeline" data-height="370" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/MendesCunha" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/MendesCunha">Mendes Cunha Advogados</a></blockquote></div>
 		</div>
 	</div>
 </div>	

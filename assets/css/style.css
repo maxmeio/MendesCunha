@@ -4,6 +4,7 @@
 a {
     text-decoration: none!important;
     cursor: pointer!important;
+    transition: 1s;
 }
 p {
     line-height: 1.5;
@@ -318,9 +319,10 @@ ul.nav>li>a:hover {
     margin-top: 100px;
     background-color: #ebebe4;
     border-radius: 15px;
-    padding: 40px 60px;
+    padding: 35px 57px;
     padding-left: 90px;
     height: 320px;
+    margin-left: 20px;
 }
 
 .decisoes .item img {
@@ -333,10 +335,6 @@ ul.nav>li>a:hover {
 .decisoes .item h2 {
     margin-top: 0;
     color: #7e6b29;
-}
-
-.owl-stage-outer {
-    padding: 0 40px;
 }
 
 .owl-decisoes {
@@ -391,12 +389,55 @@ ul.nav>li>a:hover {
     margin: 0;
 }
 
+footer {
+    height: 325px;
+    background-color: #171606;
+    color: #545016;
+    line-height: 1.8;
+    padding: 20px;
+}
+
+footer .areas a {
+    color: #545016;
+}
+
+footer .fa {
+    margin-right: 8px;
+    font-size: 22px;
+}
+
+footer .redes-icons .fa {
+    border-radius: 50px;
+    margin-right: 8px;
+    background-color: #545016;
+    width: 35px;
+    color: #171606;
+    height: 35px;
+    display: inline-grid;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+footer .redes-icons .fa:hover {
+    opacity: .5;
+}
+
+footer hr {
+    border-color: #545016;
+}
+
+footer img {
+    display: flex;
+    margin: 0 auto 0;
+}
+
 
 /* --- MOBILE --- */
 @media (max-width: 767px) {
     #bs-example-navbar-collapse-1 {
         float: none;
-        background: transparent;
+        background: #baa041;
         z-index: 300;
         position: relative;
         min-height: 300px;
@@ -407,11 +448,7 @@ ul.nav>li>a:hover {
         top: -30px;
     }
     .navbar-toggle {
-        padding: 15px 15px;
-        margin-top: 20px;
-    }
-    .navbar-toggle {
-        margin-top: 75px;
+        margin-top: 30px;
     }
     .navbar-header {
         height: 90px;
@@ -435,8 +472,25 @@ ul.nav>li>a:hover {
     .navbar-nav>li>a {
         padding: 15px 10px!important;
     }
+
+    .navbar-nav .fa {
+        color: #fff;
+    }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+
+@media (min-width: 768px) and (max-width: 999px) {
+    .equipe {
+        height: auto;
+    }
+    .btn-geral {
+        margin: 0px auto 0px;
+        font-size: 12px;
+        padding: 13px 50px;
+    }
+    header ul.nav>li>a {
+        font-size: 12px;
+        padding: 0px 5px;
+    }
 
 }
 @media (min-width: 992px) and (max-width: 1100px) {
