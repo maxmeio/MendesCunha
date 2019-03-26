@@ -39,19 +39,39 @@
                             <li><a href="">DECISÕES</a></li>
                             <li><a href="">ÁREAS DE ATUAÇÃO</a>
                                 <ul>
-                                    <li><a href="">Direito Civil</a></li>
-                                    <li><a href="">Direito Empresarial</a></li>
-                                    <li><a href="">Direito imobiliário</a></li>
-                                    <li><a href="">Direito trabalhista</a></li>
-                                    <li><a href="">Direito providenciário</a></li>
+                                    <li><a href=""><i class="fa fa-angle-right" aria-hidden="true"></i>Direito Civil</a></li>
+                                    <li><a href=""><i class="fa fa-angle-right" aria-hidden="true"></i>Direito Empresarial</a></li>
+                                    <li><a href=""><i class="fa fa-angle-right" aria-hidden="true"></i>Direito imobiliário</a></li>
+                                    <li><a href=""><i class="fa fa-angle-right" aria-hidden="true"></i>Direito trabalhista</a></li>
+                                    <li><a href=""><i class="fa fa-angle-right" aria-hidden="true"></i>Direito providenciário</a></li>
                                 </ul>
                             </li>
                             <li><a href="">NOTÍCIAS</a></li>
                             <li><a href="">CONTATO</a></li>
-                            <li class="search"><a href=""><i class="fa fa-search"></i></a></li>
+                            <li class="search"><a href="javascript:;" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i></a></li>
                         </ul><!-- .nav -->
                     </div><!-- .navbar-collapse -->
                 </div><!-- container -->
             </nav><!-- .navbar -->
         </div><!-- .nav -->
     </header>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div><!-- modal-header -->
+                <div class="modal-body">
+                    <form action="/noticias" method="get">
+                        <div class="form-group">
+                            <label>O que voce busca?</label>
+                            <input type="text" name="keywords" class="form-control">
+                            <button type="submit" class="right btn btn-warning">Enviar</button>
+                        </div><!-- form-group -->
+                    </form>
+                </div><!-- modal-body -->
+            </div><!-- modal-content -->
+        </div><!-- modal-dialog -->
+    </div><!-- modal -->

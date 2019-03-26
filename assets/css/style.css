@@ -77,6 +77,11 @@ header ul.nav>li>a {
     text-transform: uppercase;
     padding: 0px 15px;
 }
+
+header .fa {
+    color: #a08936!important;
+    
+}
 .nav li ul li a {
     color: #fff!important;
     text-align: left;
