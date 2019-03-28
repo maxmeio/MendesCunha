@@ -1,8 +1,8 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Noticias extends MY_Controller
+class Decisoes extends MY_Controller
 {
-	protected $_namemodel	=	'noticias';
+	protected $_namemodel	=	'decisoes';
 
 
 	public function __construct()
@@ -46,12 +46,6 @@ class Noticias extends MY_Controller
 		parent::add_upd($id, $pagina);
 		$data =	$this->_data;
 
-		// application/models/model_noticias.php
-		$model					=	load_model($this->_namemodel);
-		$data['categorias']		=	$model->get_categorias();
-
-		$this->set_data($data);
-
 		// core/MY_Controller.php
 		$this->adm_template_load('lays/layout', $this->_namemodel . '/form', $this->_data);
 	}
@@ -93,12 +87,9 @@ class Noticias extends MY_Controller
 				
 					$data_update = array(
 							'data'			=>	date('Y-m-d H:i:s'),
-							'data_pub'		=>	format_data_db(post("data_pub").' '.post("time_pub")),
-							'titulo'		=>	post("titulo"),
-							'categoria'		=>	(int)post("categoria"),
-							'chamada'		=>	stripslashes(strip_tags(post("chamada"))),
-							'conteudo'		=>	stripslashes(post("conteudo", FALSE)),
-							'autor'	        =>	post("autor"),
+							'empresa'		=>	post("empresa"),
+							'pessoa'		=>	post("pessoa"),
+							'descricao'		=>	stripslashes(post("descricao", FALSE)),
 							'folder'		=>	$folder,
 							'arquivo'		=>	$file
 					);
@@ -134,12 +125,9 @@ class Noticias extends MY_Controller
 
 					$data_insert = array(
 							'data'			=>	date('Y-m-d H:i:s'),
-							'data_pub'		=>	format_data_db(post("data_pub").' '.post("time_pub")),
-							'titulo'		=>	post("titulo"),
-							'categoria'		=>	(int)post("categoria"),
-							'chamada'		=>	stripslashes(strip_tags(post("chamada"))),
-							'conteudo'		=>	stripslashes(post("conteudo", FALSE)),
-							'autor'	        =>	post("autor"),
+							'empresa'		=>	post("empresa"),
+							'pessoa'		=>	post("pessoa"),
+							'descricao'		=>	stripslashes(post("descricao", FALSE)),
 							'folder'		=>	$folder,
 							'arquivo'		=>	$file,
 							'status'		=>	0,
@@ -160,8 +148,12 @@ class Noticias extends MY_Controller
 	{
 		$config = array(
 			array(
-				'field' => 'titulo',
-				'label' => 'Titulo',
+				'field' => 'empresa',
+				'label' => 'Empresa',
+				'rules' => 'required'
+			), array(
+				'field' => 'pessoa',
+				'label' => 'Pessoa',
 				'rules' => 'required'
 			)
 		);

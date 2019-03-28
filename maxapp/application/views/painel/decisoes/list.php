@@ -1,11 +1,11 @@
 <?php
 	$this->CI =& get_instance();
-	$nameform = "noticias";
+	$nameform = "decisoes";
     $array_tipo = [0 => 'Admin', 1 => 'Tutor', 2 => 'Aluno'];
 ?>
 <div class="card">
 	<div class="card-body">
-		<h4 class="card-title">Notícias</h4>
+		<h4 class="card-title">Decisões</h4>
 		<div class="d-flex table-responsive">
 			<div class="btn-group">
 			<?php
@@ -21,8 +21,8 @@
 				  <thead>
 					<tr>
 						<th>ID</th>
-						<th>Categoria</th>
-						<th>Título</th>
+						<th>Empresa</th>
+						<th>Pessoa</th>
 						<th>Descrição</th>
 					</tr>
 				  </thead>
@@ -35,14 +35,14 @@
 					?>
 						<tr id="i_<?php echo $items['id']; ?>">
 							<td><?php echo $items['id']; ?></td>
-							<td><?php echo $items['categoria']; ?></td>
-							<td><?php echo $items['titulo']; ?></td>
+							<td><?php echo $items['empresa']; ?></td>
+							<td><?php echo $items['pessoa']; ?></td>
 							<td><?php echo $items['descricao']; ?></td>
 							<td class="action">
 								<?php
 									echo btn_status(array("nameform"=>$nameform, "id"=>$items['id'], "title"=>status($items['status'], 'info')));
 								?>
-								<a href="<?=base_url('painel/noticias/upd/'.$items['id'].'/0');?>" class="btn btn-outline-primary">Editar</a>
+								<a href="<?=base_url('painel/decisoes/upd/'.$items['id'].'/0');?>" class="btn btn-outline-primary">Editar</a>
 								<a href="javascript:void(0);" class="btn btn-outline-primary del" rel="<?=$nameform;?>" title="Excluir" id="<?=$items['id'];?>">Excluir</a>
 							</td>
 						</tr>
