@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Aaux ProBlack OSF';
+    src: local("Aaux ProBlack OSF Regular"), url("/vernaculo/assets/fonts/aaux/Aaux ProBlack OSF Regular.woff") format("woff"); /*non-IE*/  
+}
+@font-face {
+    font-family: 'Aaux ProLight OSF';
+    src: local("Aaux ProLight OSF Regular"), url("/vernaculo/assets/fonts/aaux/Aaux ProLight OSF Regular.woff") format("woff"); /*non-IE*/ 
+}
+@font-face {
+    font-family: 'Aaux ProBold Regular';
+    src: local("Aaux ProBold Regular"), url("/vernaculo/assets/fonts/aaux/Aaux ProBold Regular.woff") format("woff"); /*non-IE*/  
+}
+@font-face {
+    font-family: 'Aaux ProRegular Regular';
+    src: local("Aaux ProRegular Regular"), url("/vernaculo/assets/fonts/aaux/Aaux ProRegular Regular.woff") format("woff"); 
+}
+@font-face {
+    font-family: 'Aaux ProMedium OSF Regular';
+    src: local("Aaux ProMedium OSF Regular"), url("/vernaculo/assets/fonts/aaux/Aaux ProMedium OSF Regular.woff") format("woff"); 
+}
+@font-face {
+    font-family: 'League Gothic Regular';
+    src: local("League Gothic Regular"), url("/vernaculo/assets/fonts/leaguegothic/League Gothic Regular.woff") format("woff"); 
+}
