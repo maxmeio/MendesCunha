@@ -26,7 +26,7 @@ $config = array(
 		"keywords_site"			=>	'',
 		"copyright_site"		=>	'Todos os direitos reservados',
 		"replyto_site"			=>	'atendimento@maxmeio.com',
-		"titulo_site"			=>	'Hospital Rio Grande',
+		"titulo_site"			=>	'Mendes Cunha',
 		"assets_site"			=>	'site/',
 		"pagination_max_site"	=>	6,
 

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Base</title>
+    <title>Mendes Cunha</title>
 
     <link rel="icon" href="assets/images/favicon.png" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
@@ -39,11 +39,15 @@
                             <li><a href="">DECISÕES</a></li>
                             <li><a href="">ÁREAS DE ATUAÇÃO</a>
                                 <ul>
-                                    <li><a href="">Direito Civil</a></li>
-                                    <li><a href="">Direito Empresarial</a></li>
-                                    <li><a href="">Direito imobiliário</a></li>
-                                    <li><a href="">Direito trabalhista</a></li>
-                                    <li><a href="">Direito providenciário</a></li>
+                                    <?php
+                                        if(count($areas) > 0) {
+                                            foreach($areas as $items) {
+                                                ?>
+                                                <li><a href=""><?php echo $items["titulo"]; ?></a></li>
+                                    <?php           
+                                            }
+                                        } 
+                                    ?>
                                 </ul>
                             </li>
                             <li><a href="">NOTÍCIAS</a></li>
