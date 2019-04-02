@@ -14,6 +14,7 @@
     <link rel='stylesheet' href='assets/css/hover-min.css' type='text/css' />
     <link rel='stylesheet' href='assets/css/owl.carousel.min.css' type='text/css' />
     <link rel='stylesheet' href='assets/css/style.css' type='text/css' />
+    <link rel='stylesheet' href='assets/js/jquery-toast-plugin/src/jquery.toast.css' type='text/css' />
 </head>
 
 <body>
@@ -33,11 +34,11 @@
 
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li><a href="">HOME</a></li>
-                            <li><a href="">INSTITUCIONAL</a></li>
-                            <li><a href="">EQUIPE</a></li>
-                            <li><a href="">DECISÕES</a></li>
-                            <li><a href="">ÁREAS DE ATUAÇÃO</a>
+                            <li><a href="inicio">HOME</a></li>
+                            <li><a href="#">INSTITUCIONAL</a></li>
+                            <li><a href="equipe">EQUIPE</a></li>
+                            <li><a href="decisoes">DECISÕES</a></li>
+                            <li><a href="areas">ÁREAS DE ATUAÇÃO</a>
                                 <ul>
                                     <?php
                                         if(count($areas) > 0) {
@@ -50,8 +51,8 @@
                                     ?>
                                 </ul>
                             </li>
-                            <li><a href="">NOTÍCIAS</a></li>
-                            <li><a href="">CONTATO</a></li>
+                            <li><a href="noticias">NOTÍCIAS</a></li>
+                            <li><a href="contato">CONTATO</a></li>
                             <li class="search"><a href=""><i class="fa fa-search"></i></a></li>
                         </ul><!-- .nav -->
                     </div><!-- .navbar-collapse -->

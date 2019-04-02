@@ -2,94 +2,141 @@
 
 class Contato extends MY_Controller
 {
-	protected $_namemodel	=	'contatos';
-
 	public function __construct()
 	{
 		parent::__construct();
-		$this->load->library('session');
 	}
 
 
 	public function index()
 	{
-		$this->site_template_load('layout', 'fale-conosco', NULL);
+		// Definindo titulo da pagina
+		$data['titulo']		=	"Contato";
+		
+		
+		$this->site_template_load('layout', 'contato', $data);
 	}
 	
 	public function send()
 	{
+		date_default_timezone_set("America/Fortaleza");
 
-		// application/helpers/basics_helper.php
-		$model	=	load_model($this->_namemodel);
-
-		$dados =	$this->_data;
-
-		// Carrega a biblioteca email
-		$from_email = post('email'); 
-		$to_email = "{email do destinatário}";
+		if ($this->input->is_ajax_request()) 
+		{
+			$this->set_rules_validation();
 			
-		// Nome do remetente
-		$nome 		= post('nome');
-		// Mensagem
-		$mensagem 	= post('mensagem');
+			if($this->form_validation->run() == TRUE)
+			{
+				// application/helpers/basics_helper.php
+				$model			=	load_model('generico', 'contatos');
 
-		// configuração do protocolo
-		$config = Array(
-			'protocol' => 'smtp',
-			'smtp_host' => '{host smtp}',
-			'smtp_port' => 587,
-			'smtp_user' => '{usuário smtp}',
-			'smtp_pass' => '{senha do usuário smtp}',
-			'smtp_crypto' => 'tls',
-			'mailtype'  => 'text'
-		);
+				$data = array(
+					'data'			=>	date("Y-m-d H:i:s"),
+					'nome'			=>	post("nome"),
+					'email'			=>	post("email"),
+					'telefone'		=>	post("telefone"),
+					'mensagem'		=>	post("mensagem"),
+					'lido'			=>	0,
+					'status'		=>	0,
+					'excluido'		=>	0
+				);
 
-		$this->load->library('email', $config);
-		$this->email->set_newline("\r\n");
-	
-		// Define remetente e destinatário
-		$this->email->from($from_email, $nome); // Remetente
-		$this->email->to($to_email, "{Nome do destinatário}"); // Destinatário
+				// application/models/my_model.php
+				$model->insert($data);
 
-		// Define o assunto do email
-		$this->email->subject('{assunto do email}'); 
-		$this->email->message($mensagem); 
+				$rows['row'] 				=	array(
+					'nome'			=>	post("nome"),
+					'email'			=>	post("email"),
+					'telefone'		=>	post("telefone"),
+					'mensagem'		=>	post("mensagem")
+				);
+				$this->load->library('email');
+				$config['newline']          =	"\r\n";
+				$config['mailtype']         =	'html';
+				$config['validation']   	=	TRUE;
+				$this->email->initialize($config);
 
+				$this->email->from(post("email"));
+				$this->email->to('carlos@maxmeio.com');
+				$this->email->subject('Contato - Mendes Cunha');
+				$body = $this->load->view('site/mail_contato', $rows, true);
 
-		//Send mail 
-		if($this->email->send()) {
-			$data = array(
-				'nome'			=>	post("nome"),
-				'email'			=>	post("email"),
-				'telefone'		=>	post("telefone"),
-				'mensagem'		=>	post("mensagem"),
-				'data'			=>	date("Y-m-d H:i:s"),
-				'status'		=>	0,
-				'excluido'		=>	0
-			);
-
-			// application/models/my_model.php
-			$model->insert($data);
-
-			$this->session->set_flashdata("email_sent","Email Enviado com sucesso!");
-		} 
-		else 
-			$this->session->set_flashdata("email_sent","Erro no envio do email!");
-		
-		$this->set_data($dados);
-		$this->site_template_load('layout', 'fale-conosco', $this->_data);
-		redirect('contato', 'location');
-		//exit();
+				$this->email->message($body);
+				$result = $this->email->send();
+				
+				echo json_encode(array('status' => '200', 'mensagem' => 'Dados enviados com sucesso'));
+			}
+			else
+			{
+				echo json_encode(array("status" => '404', 'mensagem' => 'Insira todos os dados'));
+			}
+		}
 	}
 	
 	public function newsletter()
 	{
-		
+		date_default_timezone_set("America/Fortaleza");
+
+		if ($this->input->is_ajax_request()) 
+		{
+			$this->set_rules_validation();
+			
+			if($this->form_validation->run() == TRUE)
+			{
+				// application/helpers/basics_helper.php
+				$model			=	load_model('generico', 'newsletter');
+
+				$data = array(
+					'data'			=>	date("Y-m-d H:i:s"),
+					'email'			=>	post("email"),
+					'lido'			=>	0,
+					'status'		=>	0,
+					'excluido'		=>	0
+				);
+
+				// application/models/my_model.php
+				$model->insert($data);
+
+				$rows['row'] 				=	array(
+					'email'			=>	post("email")
+				);
+				$this->load->library('email');
+				$config['newline']          =	"\r\n";
+				$config['mailtype']         =	'html';
+				$config['validation']   	=	TRUE;
+				$this->email->initialize($config);
+
+				$this->email->from(post("email"));
+				$this->email->to('carlos@maxmeio.com');
+				$this->email->subject('Newsletter - Mendes Cunha');
+				$body = $this->load->view('site/mail_newsletter', $rows, true);
+
+				$this->email->message($body);
+				$result = $this->email->send();
+				
+				echo json_encode(array('status' => '200', 'mensagem' => 'Dados enviados com sucesso'));
+			}
+			else
+			{
+				echo json_encode(array("status" => '404', 'mensagem' => 'Insira todos os dados'));
+			}
+		}
 	}
 
 	private function set_rules_validation()
 	{
-		
+		$config = array(
+			array(
+				'field' => 'email',
+				'label' => 'Email',
+				'rules' => 'required',
+				'errors'=>	array(
+							'required' => 'Por favor, insira um email',
+				)
+			)
+		);
+
+		$this->form_validation->set_rules($config);
 	}
 
 }
