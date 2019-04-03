@@ -25,8 +25,5 @@ class Areas extends MY_Controller
 	}
 }
 
-/* End of file inicial.php */
-/* Location: ./application/controllers/site/inicial.php */
-
-/* End of file inicial.php */
+/* End of file areas.php */
 /* Location: ./application/controllers/site/inicial.php */

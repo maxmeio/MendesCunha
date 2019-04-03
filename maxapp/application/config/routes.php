@@ -64,7 +64,7 @@ $route['painel/(:any)']							   	   		=	"painel/$1/index";						// dir/controll
 // EXPRESSOES-REGULARES
 #$route['solicitacoes']								  		=	   "site/inicial/seccionais_logout";
 $route['home_teste']								  		=	"site/inicial/teste";
-$route['institucional']										=	"site/noticias/institucional";		// dir/controller/method/categoria/pagination
+// $route['institucional']										=	"site/noticias/institucional";		// dir/controller/method/categoria/pagination
 $route['institucional/(:num)']								=	"site/noticias/institucional/$1";		// dir/controller/method/categoria/pagination
 $route['informativo']										=	"site/noticias/informativo";			// dir/controller/method/categoria/pagination
 $route['informativo/(:num)']								=	"site/noticias/informativo/$1";			// dir/controller/method/categoria/pagination
