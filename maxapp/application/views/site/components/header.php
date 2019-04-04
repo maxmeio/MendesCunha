@@ -34,8 +34,8 @@
 
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li><a href="inicio">HOME</a></li>
-                            <li><a href="#">INSTITUCIONAL</a></li>
+                            <li><a href="home">HOME</a></li>
+                            <li><a href="institucional">INSTITUCIONAL</a></li>
                             <li><a href="equipe">EQUIPE</a></li>
                             <li><a href="decisoes">DECISÕES</a></li>
                             <li><a href="areas">ÁREAS DE ATUAÇÃO</a>
