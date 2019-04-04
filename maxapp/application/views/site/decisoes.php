@@ -20,6 +20,7 @@
                                 <h2><?php echo $items["pessoa"]; ?></h2>
                                 <?php echo $items["descricao"]; ?>
                                 <img src="<?php echo base_url('_ups/decisoes').'/'.$items["folder"].'/'.$items["arquivo"]; ?>" alt="">
+                                <a href="decisao/<?php echo $items["id"]; ?>">VER MAIS</a>
                             </div>
                     <?php           
                             }

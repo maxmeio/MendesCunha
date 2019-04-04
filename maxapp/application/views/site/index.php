@@ -29,7 +29,7 @@
     </div>
 </section>
 
-<section id="noticias-anc" class="noticias">
+<section id="noticias-anc" class="noticias-inicio">
     <div class="container">
         <h2>Notícias</h2>
         <div class="owl-carousel owl-theme owl-noticias">
@@ -52,7 +52,7 @@
                 } 
             ?>
         </div>
-        <a class="btn-geral" href="">VER TODAS</a>
+        <a class="btn-geral" href="noticias">VER TODAS</a>
     </div>
 </section>
 

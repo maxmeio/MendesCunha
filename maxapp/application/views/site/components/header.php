@@ -7,14 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Mendes Cunha</title>
 
-    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon" />
+    <link rel="icon" href="<?php base_url()?>/MendesCunha/assets/images/favicon.png" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
 
-    <link rel='stylesheet' href='assets/css/bootstrap.min.css' type='text/css' />
-    <link rel='stylesheet' href='assets/css/hover-min.css' type='text/css' />
-    <link rel='stylesheet' href='assets/css/owl.carousel.min.css' type='text/css' />
-    <link rel='stylesheet' href='assets/css/style.css' type='text/css' />
-    <link rel='stylesheet' href='assets/js/jquery-toast-plugin/src/jquery.toast.css' type='text/css' />
+    <link rel='stylesheet' href='<?php base_url()?>/MendesCunha/assets/css/bootstrap.min.css' type='text/css' />
+    <link rel='stylesheet' href='<?php base_url()?>/MendesCunha/assets/css/hover-min.css' type='text/css' />
+    <link rel='stylesheet' href='<?php base_url()?>/MendesCunha/assets/css/owl.carousel.min.css' type='text/css' />
+    <link rel='stylesheet' href='<?php base_url()?>/MendesCunha/assets/css/style.css' type='text/css' />
+    <link rel='stylesheet' href='<?php base_url()?>/MendesCunha/assets/js/jquery-toast-plugin/src/jquery.toast.css' type='text/css' />
 </head>
 
 <body>
@@ -29,7 +29,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="index.php"><img class="logo" src="assets/images/logo-mendes-cunha.png" alt="Logo" /></a>
+                        <a class="navbar-brand" href="index.php"><img class="logo" src="<?php base_url()?>/MendesCunha/assets/images/logo-mendes-cunha.png" alt="Logo" /></a>
                     </div><!-- .navbar-header -->
 
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

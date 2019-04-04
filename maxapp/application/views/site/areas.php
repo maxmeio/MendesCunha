@@ -12,7 +12,7 @@
                         <img src="<?php echo base_url('_ups/areas').'/'.$items["folder"].'/'.$items["arquivo"]; ?>" style="width: 60px; height: 60px;">
                         <h3><?php echo $items["titulo"]; ?></h3>
                         <p><?php echo $items["descricao"]; ?></p>
-                        <a href="">VER MAIS</a>
+                        <a href="area/<?php echo $items["id"]; ?>">VER MAIS</a>
                     </div>
 
             <?php           

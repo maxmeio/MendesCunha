@@ -14,6 +14,8 @@
                             <h4><?php echo $items["nome"]; ?></h4>
                             <p><?php echo $items["oab"]; ?></p>
                         </div>
+
+                        <a href="membro/<?php echo $items["oid"]; ?>">VER MAIS</a>
                     </div>
             <?php           
                     }

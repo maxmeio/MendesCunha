@@ -12,7 +12,14 @@ class Contato extends MY_Controller
 	{
 		// Definindo titulo da pagina
 		$data['titulo']		=	"Contato";
+
+		###################     LISTA DAS ÁREAS 	 #########################	
 		
+		$sql_areas['where']      		=	array("status"  =>  1, "excluido"   =>  0);
+		$sql_areas['order']      		=	array("field" => "id", "hang" => "ASC");
+		$sql_areas['limit']	     		=  5;
+		
+		$data['areas']   				=   $this->get_data('areas', NULL, $sql_areas);		
 		
 		$this->site_template_load('layout', 'contato', $data);
 	}
