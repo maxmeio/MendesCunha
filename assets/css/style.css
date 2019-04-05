@@ -215,7 +215,7 @@ ul.nav>li>a:hover {
     text-align: center;
 }
 
-.noticias .texto-noticia {
+.item .texto-noticia {
     background-color: #545016;
     width: 92%;
     height: 95px;
@@ -224,11 +224,11 @@ ul.nav>li>a:hover {
     padding: 3px;
 }
 
-.noticias .texto-noticia h4 {
+.item .texto-noticia h4 {
     color: #cb9456;
 }
 
-.noticias .texto-noticia p {
+.item .texto-noticia p {
     color: #fff;
 }
 
@@ -435,6 +435,127 @@ footer hr {
 footer img {
     display: flex;
     margin: 0 auto 0;
+}
+
+/*INSTITUCIONAL*/
+
+.institucional {
+    margin: 90px 0;
+}
+
+ol {
+    display: flex;
+    float: right;
+    margin-top: -50px;
+}
+
+.breadcrumb {
+    margin-top: -50px;
+    float: right;
+    margin-bottom: 0;
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
+}
+
+.titulo-geral {
+    color: #545016;
+}
+
+.breadcrumb a {
+    color: #979796;
+}
+
+.breadcrumb .active {
+    color: #545016;
+}
+
+.institucional p {
+    font-size: 16px;
+    text-align: justify;
+    color: #424242;
+}
+
+.titulo-geral {
+    border-bottom: 1px solid #baa041;
+}
+
+.titulo-geral:after {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 2px;
+    background: #545016;
+    margin-top: 10px;
+}
+
+.institucional .owl-institucional {
+    margin: 35px 0;
+}
+
+.institucional .owl-institucional .owl-prev {
+    background-color: #baa041;
+    padding: 10px 30px;
+    width: 70px;
+    margin-top: -70px;
+    position: absolute;
+    font-size: 35px;
+    color: #fff;
+}
+
+.institucional .owl-institucional .owl-next {
+    background-color: #a08a38;
+    padding: 10px 30px;
+    width: 70px;
+    margin-top: -70px;
+    margin-left: 70px;
+    position: absolute;
+    font-size: 35px;
+    color: #fff;
+}
+
+.pagina-noticias {
+    margin: 90px 0;
+}
+
+.pagina-noticias .item {
+    padding: 35px 0;
+    text-align: center;
+}
+
+.pagina-noticias .titulo-geral:after {
+    content: "";
+    display: block;
+    width: 106px;
+    height: 2px;
+    background: #545016;
+    margin-top: 10px;
+}
+
+.contato {
+    margin: 90px 0;
+}
+
+.contato .titulo-geral:after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 2px;
+    background: #545016;
+    margin-top: 10px;
+}
+
+.contato form {
+    margin: 45px 0;
+}
+
+.contato label {
+    color: #979796;
+}
+
+.contato .btn-geral {
+    margin: 29px 0;
+    float: right;
 }
 
 

@@ -1,3 +1,18 @@
+        <section class="newsletter">
+            <div class="container">
+                <div class="area-news">
+                    <div class="novidades">
+                        <h3>Receba nossas novidades no seu e-mail</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="form">
+                        <input type="text" placeholder="Seu email">
+                        <a class="btn-geral" href="">ENVIAR</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <footer>
         	<div class="container">
         		<div class="row">

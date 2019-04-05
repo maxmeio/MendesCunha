@@ -173,40 +173,25 @@
 			</div>
 		</div>
 	</div>
-
 </section>
 
 <section class="redes-sociais">
-<div class="container">
-	<div class="row">
-		<h2>Redes Sociais</h2>
-		<div class="col-sm-4">
-			<a class="twitter-timeline" data-height="512" href="https://twitter.com/mendescunha?ref_src=twsrc%5Etfw">Tweets by mendescunha</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	<div class="container">
+		<div class="row">
+			<h2>Redes Sociais</h2>
+			<div class="col-sm-4">
+				<a class="twitter-timeline" data-height="512" href="https://twitter.com/mendescunha?ref_src=twsrc%5Etfw">Tweets by mendescunha</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			</div>
+			<div class="col-sm-4">
+				<a class="twitter-timeline"  data-height="512" href="https://twitter.com/mendescunha?ref_src=twsrc%5Etfw">Tweets by mendescunha</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			</div>
+			<div class="col-sm-4">
+				<div class="fb-page" data-href="https://www.facebook.com/MendesCunha" data-tabs="timeline" data-height="370" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/MendesCunha" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/MendesCunha">Mendes Cunha Advogados</a></blockquote></div>
+			</div>
 		</div>
-		<div class="col-sm-4">
-			<a class="twitter-timeline"  data-height="512" href="https://twitter.com/mendescunha?ref_src=twsrc%5Etfw">Tweets by mendescunha</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-		</div>
-		<div class="col-sm-4">
-			<div class="fb-page" data-href="https://www.facebook.com/MendesCunha" data-tabs="timeline" data-height="370" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/MendesCunha" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/MendesCunha">Mendes Cunha Advogados</a></blockquote></div>
-		</div>
-	</div>
-</div>	
+	</div>	
 </section>
 
-<section class="newsletter">
-	<div class="container">
-		<div class="area-news">
-			<div class="novidades">
-				<h3>Receba nossas novidades no seu e-mail</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-			</div>
-			<div class="form">
-				<input type="text" placeholder="Seu email">
-				<a class="btn-geral" href="">ENVIAR</a>
-			</div>
-		</div>
-	</div>
-</section>
 
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v3.2"></script>
