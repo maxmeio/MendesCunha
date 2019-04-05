@@ -1,15 +1,3 @@
-<section class="topo-interna">
-	<div class="borda1"></div>
-	<div class="container">
-		<h1>Equipe</h1>
-		<ol class="breadcrumb pull-right">
-			<li><a href="<?=site_url('/');?>">Home</a></li>
-			<li class="active">Equipe</li>
-		</ol>
-	</div><!-- container -->
-	<div class="borda2"></div>
-</section><!-- topo-interna -->
-
 <section class="listagem noticias">
 	<div class="container">
 		<div class="row">

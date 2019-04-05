@@ -34,11 +34,11 @@
 
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li><a href="home">HOME</a></li>
-                            <li><a href="institucional">INSTITUCIONAL</a></li>
-                            <li><a href="equipe">EQUIPE</a></li>
-                            <li><a href="decisoes">DECISÕES</a></li>
-                            <li><a href="areas">ÁREAS DE ATUAÇÃO</a>
+                            <li><a href="<?php base_url()?>/MendesCunha/home">HOME</a></li>
+                            <li><a href="<?php base_url()?>/MendesCunha/institucional">INSTITUCIONAL</a></li>
+                            <li><a href="<?php base_url()?>/MendesCunha/equipe">EQUIPE</a></li>
+                            <li><a href="<?php base_url()?>/MendesCunha/decisoes">DECISÕES</a></li>
+                            <li><a href="<?php base_url()?>/MendesCunha/areas">ÁREAS DE ATUAÇÃO</a>
                                 <ul>
                                     <?php
                                         if(count($areas) > 0) {
@@ -51,9 +51,15 @@
                                     ?>
                                 </ul>
                             </li>
-                            <li><a href="noticias">NOTÍCIAS</a></li>
-                            <li><a href="contato">CONTATO</a></li>
-                            <li class="search"><a href=""><i class="fa fa-search"></i></a></li>
+                            <li><a href="<?php base_url()?>/MendesCunha/noticias">NOTÍCIAS</a></li>
+                            <li><a href="<?php base_url()?>/MendesCunha/contato">CONTATO</a></li>
+                            <li class="search">
+                                <form action="noticias/buscar/1/teste">
+                                    <input type="text" name="busca">
+                                    <input type="submit" name="buscar">
+                                </form>
+                                <a href=""><i class="fa fa-search"></i></a>
+                            </li>
                         </ul><!-- .nav -->
                     </div><!-- .navbar-collapse -->
                 </div><!-- container -->

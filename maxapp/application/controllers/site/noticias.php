@@ -91,7 +91,6 @@ class Noticias extends MY_Controller
 				'match'		=>	'both'
 			)
 		);
-		//die();
 
 		// core/MY_Controller.php
 		$data['listagem']		=	$this->get_data($this->_namemodel, $pagina, $sql1);
@@ -107,7 +106,6 @@ class Noticias extends MY_Controller
 
 		$this->site_template_load('layout', 'noticias', $data);
 	}
-
 }
 
 /* End of file noticias.php */

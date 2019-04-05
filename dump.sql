@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: 02-Abr-2019 às 19:33
+-- Generation Time: 05-Abr-2019 às 18:00
 -- Versão do servidor: 10.1.37-MariaDB
 -- versão do PHP: 5.6.39
 
@@ -1283,7 +1283,15 @@ INSERT INTO `ci_logs` (`id`, `registro_id`, `user_id`, `user_ip`, `created`, `ta
 (1018, 3, 24, '::1', '2019-04-02 14:39:12', 'newsletter', 'INSERT', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36', '/MendesCunha/contato/newsletter'),
 (1019, 4, 24, '::1', '2019-04-02 09:41:43', 'newsletter', 'INSERT', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36', '/MendesCunha/contato/newsletter'),
 (1020, 5, 24, '::1', '2019-04-02 14:42:58', 'newsletter', 'INSERT', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36', '/MendesCunha/contato/newsletter'),
-(1021, 15, 24, '::1', '2019-04-02 15:18:15', 'contatos', 'INSERT', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36', '/MendesCunha/contato/send');
+(1021, 15, 24, '::1', '2019-04-02 15:18:15', 'contatos', 'INSERT', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36', '/MendesCunha/contato/send'),
+(1022, 0, 0, '::1', '2019-04-03 22:30:17', 'usuarios', 'LOGIN', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36', '/MendesCunha/painel/logout'),
+(1023, 24, 0, '::1', '2019-04-03 22:30:23', 'usuarios', 'LOGIN', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36', '/MendesCunha/painel/autentica'),
+(1024, 1, 24, '::1', '2019-04-03 22:30:57', 'paginas', 'UPDATE', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36', '/MendesCunha/painel/paginas/send/0'),
+(1025, 1, 24, '::1', '2019-04-03 22:31:55', 'paginas', 'UPDATE', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36', '/MendesCunha/painel/paginas/send/0'),
+(1026, 1, 24, '::1', '2019-04-03 22:32:15', 'paginas', 'UPDATE', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36', '/MendesCunha/painel/paginas/send/0'),
+(1027, 1, 24, '::1', '2019-04-03 22:32:37', 'paginas', 'UPDATE', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36', '/MendesCunha/painel/paginas/send/0'),
+(1028, 1, 24, '::1', '2019-04-03 22:33:47', 'paginas', 'UPDATE', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36', '/MendesCunha/painel/paginas/send/0'),
+(1029, 1, 24, '::1', '2019-04-03 22:34:25', 'paginas', 'UPDATE', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36', '/MendesCunha/painel/paginas/send/0');
 
 -- --------------------------------------------------------
 
@@ -1389,6 +1397,13 @@ CREATE TABLE `ci_paginas` (
   `excluido` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Extraindo dados da tabela `ci_paginas`
+--
+
+INSERT INTO `ci_paginas` (`id`, `titulo`, `slug`, `conteudo`, `data`, `status`, `excluido`) VALUES
+(1, 'Institucional', 'institucional', '<p><span 14.08px;\"=\"\">Teste</span></p><p><img src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQvndPBhegt-DXIpCiN-IH7d-MkQlgJruwESgAKCWaQxymSGfC\" class=\"\"></p><p><br></p><p><br></p><p><img src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUTJi7QUsgRmxXXkbPduGTuVDaM56yndLQKSGOX4gDgJnr3EH1mg\"  271px;\"><br></p><h1><span rgb(255,=\"\" 255,=\"\" 0);\"=\"\"><br></span></h1><h1><img k=\" data-filename=\"><span rgb(255,=\"\" 255,=\"\" 0);\"=\"\"><br></span></h1><p></p>', '2019-04-03 16:34:25', 1, 0);
+
 -- --------------------------------------------------------
 
 --
@@ -1416,7 +1431,7 @@ CREATE TABLE `ci_usuarios` (
 --
 
 INSERT INTO `ci_usuarios` (`id`, `nome`, `email`, `username`, `password`, `created`, `tipo`, `setor_id`, `gabinete_id`, `hits`, `num_reg`, `status`, `excluido`) VALUES
-(24, 'Maxmeio', 'programacao@maxmeio.com', 'admin', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', '2013-09-02 11:54:57', 0, NULL, NULL, 594, 0, 1, 0),
+(24, 'Maxmeio', 'programacao@maxmeio.com', 'admin', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', '2013-09-02 11:54:57', 0, NULL, NULL, 595, 0, 1, 0),
 (280, 'carlos', 'carlosemidiopereira@gmail.com', 'carlos', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', '2019-03-12 13:20:14', 1, 0, 0, 0, 0, 1, 0);
 
 --
@@ -1558,7 +1573,7 @@ ALTER TABLE `ci_grupos_modulos`
 -- AUTO_INCREMENT for table `ci_logs`
 --
 ALTER TABLE `ci_logs`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1022;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1030;
 
 --
 -- AUTO_INCREMENT for table `ci_modulos`
@@ -1582,7 +1597,7 @@ ALTER TABLE `ci_noticias`
 -- AUTO_INCREMENT for table `ci_paginas`
 --
 ALTER TABLE `ci_paginas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `ci_usuarios`

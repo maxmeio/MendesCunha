@@ -10,29 +10,29 @@ class Areas extends MY_Controller
     }
 
 
-  //   public function index($pagina = NULL)
-  //   {
-  //       // Definindo titulo da pagina
-  //       $data['titulo']     =   "Notícias";
+    public function index($pagina = NULL)
+    {
+        // Definindo titulo da pagina
+        $data['titulo']     =   "Notícias";
 		
-		// ###################     LISTA DAS NOTÍCIAS 		#########################	
-		// $sql['where']       =   array("status"  =>  1, "excluido"   =>  0);
-  //       $sql['order']       =   array("field" => "data_pub", "hang" => "DESC");
+		###################     LISTA DAS NOTÍCIAS 		#########################	
+		$sql['where']       =   array("status"  =>  1, "excluido"   =>  0);
+        $sql['order']       =   array("field" => "id", "hang" => "DESC");
 		
-		// $data['listagem']   =   $this->get_data($this->_namemodel, $pagina, $sql);
-  //       $data['pagination'] =   $this->pagination($this->_namemodel, $sql, $pagina, NULL);
-  //       $data['modulo']     =   $this->_namemodel;
+		$data['listagem']   =   $this->get_data($this->_namemodel, $pagina, $sql);
+        $data['pagination'] =   $this->pagination($this->_namemodel, $sql, $pagina, NULL); 
+        $data['modulo']     =   $this->_namemodel;
 
-  //       ###################     LISTA DAS ÁREAS 	 #########################	
+        ###################     LISTA DAS ÁREAS 	 #########################	
 		
-		// $sql_areas['where']      		=	array("status"  =>  1, "excluido"   =>  0);
-		// $sql_areas['order']      		=	array("field" => "id", "hang" => "ASC");
-		// $sql_areas['limit']	     		=  5;
+		$sql_areas['where']      		=	array("status"  =>  1, "excluido"   =>  0);
+		$sql_areas['order']      		=	array("field" => "id", "hang" => "ASC");
+		$sql_areas['limit']	     		=  5;
 		
-		// $data['areas']   				=   $this->get_data('areas', NULL, $sql_areas);
+		$data['areas']   				=   $this->get_data('areas', NULL, $sql_areas);
 		
-  //       $this->site_template_load('layout', 'listagem-areas', $data);
-  //   }
+        $this->site_template_load('layout', 'listagem-areas', $data);
+    }
 
     public function item($id = NULL, $titulo = NULL)
     {     
@@ -59,7 +59,7 @@ class Areas extends MY_Controller
 			
 			$data['areas']   				=   $this->get_data('areas', NULL, $sql_areas);
 
-            $this->site_template_load('layout', 'interna', $data);
+            $this->site_template_load('layout', 'interna-areas', $data);
         }
         else
         {
