@@ -197,7 +197,7 @@ ul.nav .fa {
 
 /*NOTÍCIAS*/
 
-.noticias {
+.noticias-inicio {
     background-image: url("../images/bg-noticia.jpg");
     background-size: cover;
     height: 700px;
@@ -205,13 +205,13 @@ ul.nav .fa {
     align-items: center;
 }
 
-.noticias h2 {
+.noticias-inicio h2 {
     text-align: center;
     color: #fff;
     margin: 0 0 60px;
 }
 
-.noticias .item {
+.noticias-inicio .item {
     padding: 11px;
     text-align: center;
 }
@@ -220,7 +220,7 @@ ul.nav .fa {
     object-fit: cover;
 }
 
-.noticias .texto-noticia {
+.noticias-inicio .texto-noticia {
     background-color: #545016;
     width: 92%;
     height: 95px;
@@ -229,12 +229,80 @@ ul.nav .fa {
     padding: 3px;
 }
 
-.noticias .texto-noticia h4 {
+.noticias-inicio .texto-noticia h4 {
     color: #cb9456;
 }
 
-.noticias .texto-noticia p {
+.noticias-inicio .texto-noticia p {
     color: #fff;
+}
+
+
+.noticias {
+    padding: 80px 0;
+}
+.noticias h2 {
+    margin-bottom: 70px;
+}
+.noticias .item {
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(184,184,184,.8);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(184,184,184,.8);
+    box-shadow: 0px 0px 15px 0px rgba(184,184,184,.8);
+    transition: 1s;
+}
+.noticias .item:hover {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.noticias img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+.noticias .conteudo {
+    padding: 20px 20px 50px;
+}
+.noticias h4 {
+    font-size: 18px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    color: #3f3f3e;
+    margin: 0;
+}
+.noticias h4:after {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 2px;
+    background: #aa9a77;
+    margin-top: 15px;
+}
+.noticias p {
+    font-size: 16px;
+    color: #9e9e9d;
+    margin: 15px 0 0;
+}
+.noticias .btn-proximo {
+    float: right;
+    margin-top: 15px;
+}
+.noticias .fa {
+    font-size: 20px;
+    color: #aa9a77;
+}
+.noticias .ver-mais {
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 15px 40px;
+    background: #aa9a77;
+    display: table;
+    margin: 60px auto 0;
+}
+.noticias .ver-mais:hover {
+    color: #fff;
+    background: #484250;
 }
 
 .btn-geral {

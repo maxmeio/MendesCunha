@@ -4,11 +4,17 @@
         			<div class="col-sm-4">
         				<ul class="areas">
         					<li><h2><strong>Áreas de atuação</strong></h2></li>
-        					<li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="">Direito civil</a></li>
-        					<li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="">Direito empresarial</a></li>
-        					<li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="">Direito imobiliário</a></li>
-        					<li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="">Direito trabalhista</a></li>
-        					<li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="">Direito previdenciário</a></li>
+
+                            <?php
+                                if(count($areas) > 0) {
+                                    foreach($areas as $items) {
+                                        ?>
+                                    <li><i class="fa fa-angle-right" aria-hidden="true"></i><a href=""><?php echo $items["titulo"]; ?></a></li>
+
+                            <?php           
+                                    }
+                                } 
+                            ?>
         				</ul>
         			</div>
         			<div class="col-sm-4">
