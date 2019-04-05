@@ -852,7 +852,7 @@ $(function()
             position: String(position),
             icon: 'info',
             stack: false,
-            loaderBg: '#1b2f5f'
+            loaderBg: '#545121'
         })
     }
 	

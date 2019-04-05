@@ -15,10 +15,12 @@
                         ?>
 
                     <div class="item">
-                        <img src="<?php echo base_url('_ups/areas').'/'.$items["folder"].'/'.$items["arquivo"]; ?>" style="width: 60px; height: 60px;">
-                        <h3><?php echo $items["titulo"]; ?></h3>
-                        <p><?php echo $items["descricao"]; ?></p>
-                        <a href="">VER MAIS</a>
+                        <a href="">
+                            <img src="<?php echo base_url('_ups/areas').'/'.$items["folder"].'/'.$items["arquivo"]; ?>" style="width: 60px;">
+                            <h3><?php echo $items["titulo"]; ?></h3>
+                            <p><?php echo $items["descricao"]; ?></p>
+                            <a class="btn-vermais" href="">VER MAIS</a>
+                        </a>
                     </div>
 
             <?php           
@@ -40,11 +42,13 @@
                         ?>
 
                     <div class="item">
-                        <img src="<?php echo base_url('_ups/noticias').'/'.$items["folder"].'/'.$items["arquivo"]; ?>" alt="">
-                        <div class="texto-noticia">
-                            <h4><?php echo $items["titulo"]; ?></h4>
-                            <p><?php echo $items["conteudo"]; ?></p>
-                        </div>
+                        <a href="">
+                            <img src="<?php echo base_url('_ups/noticias').'/'.$items["folder"].'/'.$items["arquivo"]; ?>" alt="">
+                            <div class="texto-noticia">
+                                <h4><?php echo $items["titulo"]; ?></h4>
+                                <p><?php echo $items["conteudo"]; ?></p>
+                            </div>
+                        </a>
                     </div>
 
             <?php           
@@ -100,10 +104,10 @@
                                 ?>
 
                             <div class="item">
+                                <img src="<?php echo base_url('_ups/decisoes').'/'.$items["folder"].'/'.$items["arquivo"]; ?>" alt="">
                                 <p><?php echo $items["empresa"]; ?></p>
                                 <h2><?php echo $items["pessoa"]; ?></h2>
-                                <?php echo $items["descricao"]; ?>
-                                <img src="<?php echo base_url('_ups/decisoes').'/'.$items["folder"].'/'.$items["arquivo"]; ?>" alt="">
+                                <p><?php echo $items["descricao"]; ?></p>
                             </div>
                     <?php           
                             }
@@ -121,10 +125,10 @@
     <div class="row">
         <h2>Redes Sociais</h2>
         <div class="col-sm-4">
-            <a class="twitter-timeline" data-height="512" href="https://twitter.com/mendescunha?ref_src=twsrc%5Etfw">Tweets by mendescunha</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <a class="twitter-timeline" data-height="370" href="https://twitter.com/mendescunha?ref_src=twsrc%5Etfw">Tweets by mendescunha</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
         <div class="col-sm-4">
-            <a class="twitter-timeline"  data-height="512" href="https://twitter.com/mendescunha?ref_src=twsrc%5Etfw">Tweets by mendescunha</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <a class="twitter-timeline"  data-height="370" href="https://twitter.com/mendescunha?ref_src=twsrc%5Etfw">Tweets by mendescunha</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
         <div class="col-sm-4">
             <div class="fb-page" data-href="https://www.facebook.com/MendesCunha" data-tabs="timeline" data-height="370" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/MendesCunha" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/MendesCunha">Mendes Cunha Advogados</a></blockquote></div>

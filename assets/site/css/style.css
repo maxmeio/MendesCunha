@@ -28,7 +28,7 @@ body {
 }
 .titulo-geral {
     font-size: 20px;
-    color: #1b2f5f;
+    color: #545121;
     text-transform: uppercase;
     margin-top: 0;
 }
@@ -37,14 +37,14 @@ body {
     display: block;
     width: 32px;
     height: 2px;
-    background: #03a34e;
+    background: #edeacb;
     margin-top: 10px;
 }
 .btn-geral {
     font-size: 18px;
     color: #fff;
     padding: 15px 40px;
-    background: #03a34e;
+    background: #edeacb;
 }
 .btn-geral:hover {
     color: #fff;
@@ -59,7 +59,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #03a34e;
+    background: #edeacb;
     transition: 1s;
 }
 .owl-next:hover,
@@ -116,8 +116,8 @@ hr {
     padding: 0;
     width: 100%;
     height: 55px;
-    background: #1b2f5f;
-    border-top: 4px solid #03a34e;
+    background: #545121;
+    border-top: 4px solid #edeacb;
 }
 header ul.nav {
     width: 100%;
@@ -133,7 +133,7 @@ header ul.nav>li {
     transition: 1s;
 }
 header ul.nav>li:hover {
-    background: #03a34e;
+    background: #edeacb;
 }
 header ul.nav>li>a {
     font-size: 14px;
@@ -149,14 +149,14 @@ header ul.nav>li>a {
     text-transform: uppercase;
     padding: 18px 10px;
     display: block;
-    background: #03a34e;
+    background: #edeacb;
     position: relative;
     z-index: 200;
     top: 17px;
     transition: 1s;
 }
 .nav li ul li a:hover {
-    background: #1b2f5f;
+    background: #545121;
 }
 .nav li ul {
     display: none;
@@ -182,7 +182,7 @@ header ul.nav>li>a {
     justify-content: center;
     width: 27px;
     height: 27px;
-    background: #03a34e;
+    background: #edeacb;
     border-radius: 50px;
 }
 .redes-sociais ul>li>a .fa {
@@ -197,7 +197,7 @@ ul.nav li:hover .sub-menu2 {
     z-index: 2;
     width: 100%;
     height: 135px;
-    background: #03a34e;
+    background: #edeacb;
     margin-top: 17px;
     left: 0;
     display: flex;
@@ -247,7 +247,7 @@ header .owl-prev {
 }
 .especialidades h2 {
     font-size: 20px;
-    color: #1b2f5f;
+    color: #545121;
     text-align: center;
     text-transform: uppercase;
     margin: 0 0 30px;
@@ -255,11 +255,11 @@ header .owl-prev {
 .especialidades .item {
     text-align: center;
     height: 225px;
-    background: #03a34e;
+    background: #edeacb;
     transition: 1s;
 }
 .especialidades .item:hover {
-    background: #1b2f5f;
+    background: #545121;
     height: 245px;
     margin-top: -10px;
     cursor: pointer;
@@ -287,7 +287,7 @@ header .owl-prev {
     height: 530px;
     display: flex;
     align-items: center;
-    border-bottom: 4px solid #03a34e;
+    border-bottom: 4px solid #edeacb;
 }
 .sobre p {
     font-size: 16px;
@@ -311,16 +311,16 @@ header .owl-prev {
 	width: 100%;
     height: 160px;
     border-radius: 0 20px 0 0;
-    border-bottom: 4px solid #03a34e;
+    border-bottom: 4px solid #edeacb;
 }
 .dicas .conteudo {
     padding: 15px 20px;
-    background: #1b2f5f;
+    background: #545121;
     border-radius: 0 0 0 20px;
 }
 .dicas span {
     font-size: 14px;
-    color: #03a34e;
+    color: #edeacb;
     text-transform: uppercase;
 }
 .dicas p {
@@ -339,10 +339,10 @@ header .owl-prev {
 .navbar-form input#srch-term {
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
-    border: 1px solid #03a34e;
+    border: 1px solid #edeacb;
 }
 .navbar-form button.btn.btn-default {
-    border: 1px solid #03a34e;
+    border: 1px solid #edeacb;
     border-bottom-right-radius: 50px;
     border-top-right-radius: 50px;
     border-left: none;
@@ -364,7 +364,7 @@ header .owl-prev {
    font-size: 14px;
 }
 .navbar-form i.glyphicon.glyphicon-search {
-    color: #1b2f5f;
+    color: #545121;
 }
 .dicas .btn-geral {
     display: table;
@@ -397,7 +397,7 @@ header .owl-prev {
 }
 .comunicacao .nav-tabs>li>a {
     font-size: 18px;
-    color: #1b2f5f;
+    color: #545121;
     margin-right: 1px;
     border: none;
     border-radius: 0;
@@ -408,7 +408,7 @@ header .owl-prev {
 .comunicacao .nav>li>a:focus,
 .comunicacao .nav>li>a:hover {
     color: #fff;
-    background-color: #03a34e;
+    background-color: #edeacb;
     border: none;
 }
 .comunicacao .tab-content>.active {
@@ -437,12 +437,12 @@ header .owl-prev {
 }
 .comunicacao span {
     font-size: 14px;
-    color: #03a34e;
+    color: #edeacb;
     text-transform: uppercase;
 }
 .comunicacao h4 {
     font-size: 26px;
-    color: #1b2f5f;
+    color: #545121;
     text-transform: uppercase;
     margin: 20px 0;
 }
@@ -475,7 +475,7 @@ header .owl-prev {
 }
 
 .mapas {
-    border-bottom: 4px solid #1b2f5f;
+    border-bottom: 4px solid #545121;
 }
 #map {
     width: 100%;
@@ -483,7 +483,7 @@ header .owl-prev {
 }
 
 footer {
-    border-top: 4px solid #03a34e;
+    border-top: 4px solid #edeacb;
 }
 footer .item {
     width: 50%;
@@ -508,7 +508,7 @@ footer .redes-sociais {
 }
 footer .redes-sociais h2 {
     font-size: 20px;
-    color: #03a34e;
+    color: #edeacb;
     margin-top: 0;
     margin-left: 5px;
 }
@@ -529,7 +529,7 @@ footer .item:nth-child(2) h2 {
     margin: 0 0 45px;
 }
 footer .item:nth-child(2) h2 span {
-    color: #03a34e;
+    color: #edeacb;
 }
 footer form {
     margin-bottom: 85px;
@@ -548,7 +548,7 @@ footer button {
     font-size: 18px;
     color: #fff;
     padding: 0 30px;
-    background: #03a34e;
+    background: #edeacb;
     border: none;
     height: 45px;
 }
@@ -595,7 +595,7 @@ footer button .fa {
     width: 100%;
     height: 320px;
     object-fit: cover;
-    border-bottom: 4px solid #03a34e;
+    border-bottom: 4px solid #edeacb;
 }
 .diretoria .conteudo {
     background: #202b4e;
@@ -631,7 +631,7 @@ footer button .fa {
 }
 .dicas-interna h4 {
     font-size: 20px;
-    color: #1b2f5f;
+    color: #545121;
     margin: 20px 0;
 }
 .dicas-interna p {
@@ -666,11 +666,11 @@ aside ul>li:last-child {
 }
 aside ul>li span {
     font-size: 14px;
-    color: #03a34e;
+    color: #edeacb;
     text-transform: uppercase;
 }
 aside ul>li p {
-    color: #1b2f5f!important;
+    color: #545121!important;
     margin: 0!important;
 }
 
@@ -690,12 +690,12 @@ aside ul>li p {
 }
 .fale-conosco aside h4 {
     font-size: 14px;
-    color: #03a34e;
+    color: #edeacb;
     text-transform: uppercase;
 }
 .fale-conosco aside address {
     font-size: 18px;
-    color: #1b2f5f;
+    color: #545121;
 }
 
 .pagination {
@@ -710,12 +710,12 @@ aside ul>li p {
 .pagination>.active>span,
 .pagination>.active>span:focus,
 .pagination>.active>span:hover {
-    background-color: #03a34e;
-    border-color: #03a34e;
+    background-color: #edeacb;
+    border-color: #edeacb;
 }
 .pagination>li>a,
 .pagination>li>span {
-    color: #1b2f5f;
+    color: #545121;
 }
 
 .especialidades ul {
@@ -745,17 +745,17 @@ aside ul>li p {
     .navbar-toggle {
         padding: 15px 15px;
         margin-top: 28px;
-        border-color: #1b2f5f!important;
+        border-color: #545121!important;
     }
     .navbar-default {
         border-radius: 0;
         margin-bottom: 0px;
         border: none;
         height: 110px;
-        border-bottom: 1px solid #1b2f5f;
+        border-bottom: 1px solid #545121;
     }
     .navbar-default .navbar-toggle .icon-bar {
-        background-color: #1b2f5f;
+        background-color: #545121;
     }
     .navbar-nav {
         width: 100%;
