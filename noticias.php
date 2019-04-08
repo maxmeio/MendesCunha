@@ -9,36 +9,36 @@
 			</ol>
 		</div>
 			<div class="row">
-				<div class="col-sm-12 col-md-3">
+				<div class="col-sm-4 col-md-3">
 					<div class="item">
-						<img src="assets/images/noticia.jpg" alt="">
+						<img src="assets/images/noticia.jpg" alt="" class="img-responsive">
 						<div class="texto-noticia">
 							<h4>titulo</h4>
 							<p>Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. </p>
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-12 col-md-3">
+				<div class="col-sm-4 col-md-3">
 					<div class="item">
-						<img src="assets/images/noticia.jpg" alt="">
+						<img src="assets/images/noticia.jpg" alt="" class="img-responsive">
 						<div class="texto-noticia">
 							<h4>titulo</h4>
 							<p>Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. </p>
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-12 col-md-3">
+				<div class="col-sm-4 col-md-3">
 					<div class="item">
-						<img src="assets/images/noticia.jpg" alt="">
+						<img src="assets/images/noticia.jpg" alt="" class="img-responsive">
 						<div class="texto-noticia">
 							<h4>titulo</h4>
 							<p>Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. </p>
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-12 col-md-3">
+				<div class="col-sm-4 col-md-3">
 					<div class="item">
-						<img src="assets/images/noticia.jpg" alt="">
+						<img src="assets/images/noticia.jpg" alt="" class="img-responsive">
 						<div class="texto-noticia">
 							<h4>titulo</h4>
 							<p>Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. </p>
@@ -46,36 +46,36 @@
 					</div>
 				</div>
 
-				<div class="col-sm-12 col-md-3">
+				<div class="col-sm-4 col-md-3">
 					<div class="item">
-						<img src="assets/images/noticia.jpg" alt="">
+						<img src="assets/images/noticia.jpg" alt="" class="img-responsive">
 						<div class="texto-noticia">
 							<h4>titulo</h4>
 							<p>Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. </p>
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-12 col-md-3">
+				<div class="col-sm-4 col-md-3">
 					<div class="item">
-						<img src="assets/images/noticia.jpg" alt="">
+						<img src="assets/images/noticia.jpg" alt="" class="img-responsive">
 						<div class="texto-noticia">
 							<h4>titulo</h4>
 							<p>Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. </p>
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-12 col-md-3">
+				<div class="col-sm-4 col-md-3">
 					<div class="item">
-						<img src="assets/images/noticia.jpg" alt="">
+						<img src="assets/images/noticia.jpg" alt="" class="img-responsive">
 						<div class="texto-noticia">
 							<h4>titulo</h4>
 							<p>Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. </p>
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-12 col-md-3">
+				<div class="col-sm-4 col-md-3">
 					<div class="item">
-						<img src="assets/images/noticia.jpg" alt="">
+						<img src="assets/images/noticia.jpg" alt="" class="img-responsive">
 						<div class="texto-noticia">
 							<h4>titulo</h4>
 							<p>Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. </p>

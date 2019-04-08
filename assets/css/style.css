@@ -547,6 +547,7 @@ ol {
 
 .contato form {
     margin: 45px 0;
+    margin-bottom: 140px;
 }
 
 .contato label {
@@ -556,6 +557,20 @@ ol {
 .contato .btn-geral {
     margin: 29px 0;
     float: right;
+}
+
+.maps {
+    position: relative;
+    padding-bottom: 75%; 
+    height: 0;
+    overflow: hidden;
+}
+.maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
 }
 
 
@@ -626,6 +641,12 @@ ol {
     .newsletter .area-news {
         flex-flow: column;
     }
+    .pagina-noticias .img-responsive {
+        display: initial;
+    }
+    .item .texto-noticia {
+        width: 254px;
+    }
 }
 
 @media (max-width: 426px) { 
@@ -671,6 +692,6 @@ ol {
         padding-bottom: 0;
     }
 }
-@media (min-width: 992px) and (max-width: 1100px) {
+@media (min-width: 992px) and (max-width: 1166px) {
 
 }
