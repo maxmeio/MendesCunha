@@ -561,16 +561,15 @@ ol {
 
 .maps {
     position: relative;
-    padding-bottom: 75%; 
+    padding-bottom: 55%; 
     height: 0;
     overflow: hidden;
 }
 .maps iframe {
     position: absolute;
-    top: 0;
+    top: 8%;
     left: 0;
     width: 100% !important;
-    height: 100% !important;
 }
 
 

@@ -85,7 +85,7 @@
 				</div>
 			</div>
 		</div>
-		<a class="btn-geral" href="">VER TODAS</a>
+		<a class="btn-geral" href="noticias.php">VER TODAS</a>
 	</div>
 </section>
 
